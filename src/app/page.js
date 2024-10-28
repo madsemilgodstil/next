@@ -1,10 +1,9 @@
-import './globals.css'
-import CookieConsent from './components/CookieConsent'
+import Button from './components/CookieConsent'
 
 export default function Home () {
   return (
     <div>
-      <CookieConsent />
+      <Button />
     </div>
   )
 }
