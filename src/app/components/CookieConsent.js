@@ -1,4 +1,6 @@
 // components/CookieConsent.js
+'use client' // Add this line at the top
+
 import { useState, useEffect } from 'react'
 import styles from './CookieConsent.module.css'
 
