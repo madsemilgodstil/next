@@ -1,0 +1,29 @@
+/* components/CookieConsent.module.css */
+.cookieConsent {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.cookieConsent button {
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cookieConsent button:hover {
+  background-color: #45a049;
+}
