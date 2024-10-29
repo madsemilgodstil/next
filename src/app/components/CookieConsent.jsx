@@ -35,7 +35,8 @@ const CookieConsent = () => {
       position: "fixed",
       bottom: "20px",
       right: "20px",
-      width: "350px",
+      width: "300px",
+      height: "200px",
       backgroundColor: "#111",
       color: "#fff",
       padding: "20px",
@@ -45,23 +46,21 @@ const CookieConsent = () => {
       flexDirection: "column",
       gap: "10px",
     },
-    // Styling for the content area which contains the icon and text
-    content: {
+    // Styling for the header which contains the icon on the left and close button on the right
+    header: {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      gap: "10px",
+    },
+    // Styling for the content area text
+    content: {
+      fontSize: "16px",
+      margin: "10px 0 0 0",
     },
     // Styling for the cookie icon
     cookieIcon: {
       fontSize: "30px",
       color: "#fff",
-    },
-    // Styling for the main text message
-    text: {
-      flex: 1,
-      fontSize: "16px",
-      margin: 0,
     },
     // Styling for the accept button
     button: {
@@ -81,23 +80,24 @@ const CookieConsent = () => {
       color: "#fff",
       fontSize: "18px",
       cursor: "pointer",
-      alignSelf: "flex-end",
     },
   };
 
   // Render the cookie consent popup
   return (
     <div style={styles.container}>
-      {/* Close button in the top right corner */}
-      <button style={styles.closeButton} onClick={() => setIsVisible(false)}>
-        ✕
-      </button>
-      
-      {/* Content area with cookie icon and text */}
-      <div style={styles.content}>
+      {/* Header with cookie icon on the left and close button on the right */}
+      <div style={styles.header}>
         <TbCookieManFilled style={styles.cookieIcon} /> {/* Display cookie icon */}
-        <p style={styles.text}>We use cookies to improve your user experience.</p> {/* Display consent message */}
+        <button style={styles.closeButton} onClick={() => setIsVisible(false)}>
+          ✕
+        </button>
       </div>
+
+      {/* Consent message */}
+      <p style={styles.content}>
+        We use cookies to improve your user experience.
+      </p>
 
       {/* Accept button that allows the user to give consent */}
       <button style={styles.button} onClick={handleAccept}>
