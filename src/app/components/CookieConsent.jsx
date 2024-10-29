@@ -1,5 +1,5 @@
 "use client"; // This directive is necessary in Next.js to specify that this component is a client-side component.
-
+import Button from "./Button";
 import { TbCookieManFilled } from "react-icons/tb"; // Importing an icon from react-icons library
 import { useState, useEffect } from "react"; // Importing useState and useEffect hooks from React
 
@@ -99,10 +99,8 @@ const CookieConsent = () => {
         We use cookies to improve your user experience.
       </p>
 
-      {/* Accept button that allows the user to give consent */}
-      <button style={styles.button} onClick={handleAccept}>
-        I like Cookies
-      </button>
+    
+      <Button style={styles.button} ctaText="I like Cookies" />
     </div>
   );
 };

@@ -1,10 +1,13 @@
 
 
-const Button = () => {
+const Button = ({ctaText}) => {
+
+
+
   
     return ( 
       <div>
-        <button className="button" >Click Me!</button> 
+        <button className="button"  >{ctaText}</button> 
       </div>
       
      );
