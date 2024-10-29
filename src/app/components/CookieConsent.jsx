@@ -88,7 +88,8 @@ const CookieConsent = () => {
     <div style={styles.container}>
       {/* Header with cookie icon on the left and close button on the right */}
       <div style={styles.header}>
-        <TbCookieManFilled style={styles.cookieIcon} /> {/* Display cookie icon */}
+        <TbCookieManFilled style={styles.cookieIcon} />{" "}
+        {/* Display cookie icon */}
         <button style={styles.closeButton} onClick={() => setIsVisible(false)}>
           ✕
         </button>
@@ -99,8 +100,7 @@ const CookieConsent = () => {
         We use cookies to improve your user experience.
       </p>
 
-    
-      <Button style={styles.button} ctaText="I like Cookies" />
+      <Button style={styles.button} ctaText="I like Penis" />
     </div>
   );
 };

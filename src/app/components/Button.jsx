@@ -1,16 +1,9 @@
+const Button = ({ ctaText }) => {
+  return (
+    <div>
+      <button className="button">{ctaText}</button>
+    </div>
+  );
+};
 
-
-const Button = ({ctaText}) => {
-
-
-
-  
-    return ( 
-      <div>
-        <button className="button"  >{ctaText}</button> 
-      </div>
-      
-     );
-  }
-   
-  export default Button;
+export default Button;
