@@ -1,9 +1,9 @@
-import Button from './components/CookieConsent'
+import CookieConsent from './components/CookieConsent'
 
 export default function Home () {
   return (
     <div>
-      <Button />
+      <CookieConsent />
     </div>
   )
 }
