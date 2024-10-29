@@ -1,4 +1,5 @@
 "use client"; // This directive is necessary in Next.js to specify that this component is a client-side component.
+
 import Button from "./Button";
 import { TbCookieManFilled } from "react-icons/tb"; // Importing an icon from react-icons library
 import { useState, useEffect } from "react"; // Importing useState and useEffect hooks from React
@@ -62,17 +63,6 @@ const CookieConsent = () => {
       fontSize: "30px",
       color: "#fff",
     },
-    // Styling for the accept button
-    button: {
-      backgroundColor: "#fff",
-      color: "#111",
-      border: "none",
-      padding: "10px 20px",
-      borderRadius: "10px",
-      cursor: "pointer",
-      fontSize: "16px",
-      alignSelf: "center",
-    },
     // Styling for the close button (X) that dismisses the popup
     closeButton: {
       background: "none",
@@ -100,7 +90,8 @@ const CookieConsent = () => {
         We use cookies to improve your user experience.
       </p>
 
-      <Button style={styles.button} ctaText="I like Penis" />
+      {/* Pass handleAccept to the Button component as the onClick handler */}
+      <Button ctaText="I like Cookies" handleClick={handleAccept} />
     </div>
   );
 };
